@@ -1,2 +1,3 @@
-pref("enable", true);
-pref("input", "This is input");
+pref("targetLanguage", "en");
+pref("autoSetOnImport", false);
+pref("overwriteExisting", false);

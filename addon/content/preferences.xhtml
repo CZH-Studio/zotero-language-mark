@@ -4,30 +4,65 @@
 <groupbox
   onload="Zotero.__addonInstance__.hooks.onPrefsEvent('load', { window })"
 >
-  <label><html:h2 data-l10n-id="pref-title"></html:h2></label>
-  <checkbox
-    id="zotero-prefpane-__addonRef__-enable"
-    preference="enable"
-    data-l10n-id="pref-enable"
-  />
-  <hbox>
+  <label><html:h2 data-l10n-id="pref-title" /></label>
+
+  <hbox align="center">
     <html:label
-      for="zotero-prefpane-__addonRef__-input"
-      data-l10n-id="pref-input"
-    ></html:label>
+      for="zotero-prefpane-__addonRef__-languageSelector"
+      data-l10n-id="pref-language-label"
+    />
+    <html:select id="zotero-prefpane-__addonRef__-languageSelector">
+      <html:option value="en" label="en" />
+      <html:option value="zh-CN" label="zh-CN" />
+      <html:option value="zh-TW" label="zh-TW" />
+      <html:option value="ja" label="ja" />
+      <html:option value="fr" label="fr" />
+      <html:option value="de" label="de" />
+      <html:option value="es" label="es" />
+      <html:option value="ko" label="ko" />
+      <html:option value="ru" label="ru" />
+      <html:option value="pt" label="pt" />
+      <html:option value="ar" label="ar" />
+      <html:option value="it" label="it" />
+      <html:option value="nl" label="nl" />
+      <html:option value="__custom__" data-l10n-id="pref-custom-language" />
+    </html:select>
+  </hbox>
+
+  <hbox align="center">
     <html:input
       type="text"
-      id="zotero-prefpane-__addonRef__-input"
-      preference="input"
-    ></html:input>
+      id="zotero-prefpane-__addonRef__-customLanguage"
+      preference="targetLanguage"
+    />
   </hbox>
-  <hbox class="virtualized-table-container" flex="1" height="300px">
-    <html:div id="__addonRef__-table-container" />
-  </hbox>
+
+  <separator />
+
+  <checkbox
+    id="zotero-prefpane-__addonRef__-autoSetOnImport"
+    preference="autoSetOnImport"
+    data-l10n-id="pref-auto-set"
+  />
+
+  <separator />
+
+  <label><html:h3 data-l10n-id="pref-batch-section" /></label>
+
+  <checkbox
+    id="zotero-prefpane-__addonRef__-overwriteExisting"
+    preference="overwriteExisting"
+    data-l10n-id="pref-overwrite"
+  />
+
+  <button
+    id="zotero-prefpane-__addonRef__-batchSet"
+    data-l10n-id="pref-batch-set-button"
+  />
 </groupbox>
 <vbox>
   <html:label
     data-l10n-id="pref-help"
     data-l10n-args='{"time": "__buildTime__","name": "__addonName__","version":"__buildVersion__"}'
-  ></html:label>
+  />
 </vbox>

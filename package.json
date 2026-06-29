@@ -1,24 +1,24 @@
 {
   "name": "zotero-plugin-template",
   "type": "module",
-  "version": "3.1.0",
-  "description": "Zotero Plugin Template",
+  "version": "1.0.0",
+  "description": "Batch set the language field of items in Zotero",
   "config": {
-    "addonName": "Zotero Plugin Template",
-    "addonID": "addontemplate@euclpts.com",
-    "addonRef": "addontemplate",
-    "addonInstance": "AddonTemplate",
-    "prefsPrefix": "extensions.zotero.addontemplate"
+    "addonName": "Zotero Language Mark",
+    "addonID": "languagemark@euclpts.com",
+    "addonRef": "languagemark",
+    "addonInstance": "LanguageMark",
+    "prefsPrefix": "extensions.zotero.languagemark"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/windingwind/zotero-plugin-template.git"
+    "url": "git+https://github.com/CZH-Studio/zotero-language-mark.git"
   },
-  "author": "windingwind",
+  "author": "ShengShengBadWolf",
   "bugs": {
-    "url": "https://github.com/windingwind/zotero-plugin-template/issues"
+    "url": "https://github.com/CZH-Studio/zotero-language-mark/issues"
   },
-  "homepage": "https://github.com/windingwind/zotero-plugin-template#readme",
+  "homepage": "https://github.com/CZH-Studio/zotero-language-mark#readme",
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "zotero-plugin serve",
